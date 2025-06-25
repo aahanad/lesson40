@@ -77,3 +77,52 @@ s4.print_details()
 
 
 
+#homework:Implement a class on  Bank Account details of a person
+#account number
+#balance
+#withdrawal
+#deposit
+
+class Bank_Account: 
+    def __init__(self,number):
+        self.number=number
+        self.balance=""
+        self.withdrawl=""
+        self.deposit=""
+    def find_balance(self):
+        if self.number=="123":
+            self.balance="$5000"
+        elif self.number=="124":
+            self.balance="100000"
+    def find_withdrawl(self):
+        if self.number=="123":
+            self.withdrawl="$100"
+        if self.number=="124":
+            self.withdrawl="1000"
+    def find_deposit(self):
+        if self.number=="123":
+            self.deposit="$1"
+        if self.number=="124":
+            self.deposit="$10000000"
+    def print_details(self):
+        print("your balance is",self.balance)
+        print("your recent withdrawl was",self.withdrawl)
+        print("your deposit is",self.deposit)
+    def change_deposit(self):
+        if self.number=="123":
+            self.holiday=input("How much would you like to deposit instead?")
+        if self.number=="124":
+            self.holiday=input("How much would you like to deposit insted?")
+
+b1=Bank_Account("123")    
+b1.find_balance()    
+b1.find_withdrawl()
+b1.find_deposit()
+b1.change_deposit()
+b1.print_details()
+
+
+
+
+
+
